@@ -54,9 +54,9 @@ class Main extends PluginBase implements Listener{
 		return false;
 	    }
             $username = strtolower($player->getName());
-            if($command->getName() == "pui"){
+            if($command->getName() == "Partikel"){
                 if(!($player instanceof Player)){
-                        $player->sendMessage("§7 You don't have permission");
+                        $player->sendMessage("§7 Du hast keine rechte");
                         return true;
                 }
                 $api = $this->getServer()->getPluginManager()->getPlugin("FormAPI");
