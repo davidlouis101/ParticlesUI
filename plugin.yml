@@ -26,9 +26,9 @@ commands:
     description: "Particle Dring Command"
     permission: p.dring
     usage: /pdring
-  pui:
-    description: "Particle UICommand"
-    permission: p.ui
+  Partikel:
+    description: "§4Partikel"
+    permission: Partikel.command
     usage: /pui
     
     
@@ -48,6 +48,6 @@ permissions:
   p.dring:
     default: op
     description: Particle Dring Command
-  p.ui:
+  Partikel.command:
     default: op
-    description: Particle UI Command
+    description: Particle UI Commandd
