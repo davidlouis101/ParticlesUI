@@ -90,12 +90,12 @@ class Main extends PluginBase implements Listener{
 						
                 }
             });
-            $form->setTitle("§l§ePARTICLE");
-            $form->addButton("§c§lEXIT");
-            $form->addButton("§0§lCROWN HEART");
-            $form->addButton("§0§lLASER");
-            $form->addButton("§0§lTORNADO");
-            $form->addButton("§0§lSONIC BOOM");
+            $form->setTitle("§l§ePartikelUI");
+            $form->addButton("§c§lUI Schlissen");
+            $form->addButton("§0§lKrohne");
+            $form->addButton("§0§lLaser");
+            $form->addButton("§0§lTornado");
+            $form->addButton("§0§lSonic Boom");
             $form->addButton("§0§lDRING");
             $form->sendToPlayer($player);
         }
@@ -103,60 +103,60 @@ class Main extends PluginBase implements Listener{
             if(!in_array($name, $this->particle1)) {
 				
 	        $this->particle1[] = $name;
-		$player->sendMessage("§l§eParticle §7> §fCrown Heart Enable");
+		$player->sendMessage("§l§eParticle §7> §fKrohnen Partikel Aktiviert");
 			
 	    } else {
 			    
 	        unset($this->particle1[array_search($name, $this->particle1)]);
-		$player->sendMessage("§l§eParticle §7> §f Crown Heart Disable");
+		$player->sendMessage("§l§eParticle §7> §fKrohnen Partikel Deaktiviert");
 	    }
 	}
 	if($command->getName() == "plaser"){
 	    if(!in_array($name, $this->particle2)) {
 				
 		$this->particle2[] = $name;
-		$player->sendMessage("§l§eParticle §7> §fLaser Enable");
+		$player->sendMessage("§l§eParticle §7> §fLaser Partikel Aktiviert");
 			
 	    } else {
 			    
 		unset($this->particle2[array_search($name, $this->particle2)]);
-		$player->sendMessage("§l§eParticle §7> §fLaser Disable");
+		$player->sendMessage("§l§eParticle §7> §fLaser Partikel Deaktiviert");
 	    }
 	}
 	if($command->getName() == "ptornado"){
 	    if(!in_array($name, $this->particle3)) {
 				
 	        $this->particle3[] = $name;
-                $player->sendMessage("§l§eParticle §7> §fTornado Enable");
+                $player->sendMessage("§l§eParticle §7> §fTornado Partikel Aktiviert");
 		    
             } else {
 		    
 	        unset($this->particle3[array_search($name, $this->particle3)]);
-	        $player->sendMessage("§l§eParticle §7> §fTornado Disable");
+	        $player->sendMessage("§l§eParticle §7> §fTornado Partikel Deaktiviert");
 	    }
         }
 	if($command->getName() == "psboom"){
 	    if(!in_array($name, $this->particle4)) {
 				
 	        $this->particle4[] = $name;
-		$player->sendMessage("§l§eParticle §7> §fSonic Boom Enable");
+		$player->sendMessage("§l§eParticle §7> §fSonic Boom Partikel Aktiviert");
 			
 	    } else {
 			    
 		unset($this->particle4[array_search($name, $this->particle4)]);
-		$player->sendMessage("§l§eParticle §7> §fSonic Boom Disable");
+		$player->sendMessage("§l§eParticle §7> §fSonic Boom Partikel Deaktiviert");
 	     }
 	 }
 	 if($command->getName() == "pdring"){
 	     if(!in_array($name, $this->particle5)) {
 				
 		 $this->particle5[] = $name;
-		 $player->sendMessage("§l§eParticle §7> §fDring Enable");
+		 $player->sendMessage("§l§eParticle §7> §fDring Partikel Aktiviert");
 			
 	     } else {
 			    
 		 unset($this->particle5[array_search($name, $this->particle5)]);
-		 $player->sendMessage("§l§eParticle §7> §fDring Disable");
+		 $player->sendMessage("§l§eParticle §7> §fDring Partikel Deaktiviert");
 	     }
 	}
 	return true;
