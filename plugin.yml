@@ -29,7 +29,7 @@ commands:
   Partikel:
     description: "§4Partikel"
     permission: Partikel.command
-    usage: /pui
+    usage: /Partikel
     
     
 permissions:
